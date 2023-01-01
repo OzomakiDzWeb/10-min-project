@@ -1,0 +1,108 @@
+body{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   height: 100vh;
+   width: 100vw;
+   justify-content: center;
+   align-items: center;
+   background-color: black;
+   
+}
+.countainer{
+   width: 200px;
+   height: 200px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+ }
+ .menu{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(255, 0, 0);
+  border-radius: 50%;
+  z-index: 50;
+  transform: translateY(100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+ }
+ .menu span{
+  width: 30px;
+  height: 5px;
+  background-color: rgb(19, 204, 44);
+  border-radius: 5px;
+  z-index: 80;
+  margin-top: 2px;
+  
+ }
+ .menu.click span{
+  position: absolute;
+ }
+ .menu.click :nth-child(1){
+  display: none;
+ }
+ .menu.click :nth-child(2){
+  transform: rotate(45deg);
+ }
+ .menu.click :nth-child(3){
+  transform: rotate(-45deg);
+ }
+.man{
+  position: absolute;
+  width: 50%;
+  height: 100%;
+}
+.man .li{
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: rgb(253, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  transition: all 0.3s;
+}
+/* .man> :nth-child(2){
+  transform: translate(50px,-50px);
+}
+.man> :nth-child(3){
+  transform: translate(-50px,50px);
+}
+.man> :nth-child(4){
+  transform: translate(-70px,0px);
+}
+.man> :nth-child(5){
+  transform: translate(0px,-70px);
+}
+.man> :nth-child(6){
+  transform: translate(-50px,-50px);
+}
+.man> :nth-child(7){
+  transform: translate(0px,70px);
+}
+.man> :nth-child(8){
+  transform: translate(50px,50px);
+}
+.man> :nth-child(9){
+  transform: translate(70px,0px); */
+
+
+/******/
+.bobo{
+   width: 245px;
+   text-align: center;
+   height: 20px;
+   color: aliceblue;
+   background-color: green;
+   visibility:visible;
+}
