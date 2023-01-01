@@ -1,0 +1,40 @@
+body{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   height: 100vh;
+   width: 100vw;
+   justify-content: space-around;
+   align-items: center;
+   background-color: rgb(20, 22, 22);
+}
+
+button{
+   width: 150px;
+   height: 60px;
+   border-radius: 20px;
+   background-color: transparent;
+   font-size: 20px;
+   color: aqua;
+   border: 1px solid aqua;
+   font-weight: bold;
+   position: relative;
+   overflow: hidden;
+   cursor: pointer;
+}
+button::after{
+   position: absolute;
+   content: "";
+   top: 0;
+   left: 0;
+   background-color: rgb(8, 87, 84);
+   height: 100%;
+   width: 10%;
+   transform: rotate(-16deg);
+   filter: blur(2px);
+   left: -20px;
+}
+button:hover::after{
+   left: calc(100% + 10px);
+   transition: 0.75s;
+}
