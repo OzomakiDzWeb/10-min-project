@@ -1,0 +1,47 @@
+body{
+   display: flex;
+   justify-content: center;
+   height: 100vh;
+   width: 100vw;
+   justify-content: center;
+   align-items: center;
+   background-color: rgb(14, 12, 12);
+   
+
+}
+img{
+  width: 100%;
+}
+.countiner{
+  position: relative;
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
+ }
+.cards{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(6,300px);
+  grid-gap: 50px;
+  pointer-events: none;
+  
+}
+.card{
+  background-color: #ccc;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  overflow: hidden;
+  padding: 5px;
+}
+
+.bobo{
+   width: 245px;
+   text-align: center;
+   height: 20px;
+   color: aliceblue;
+   background-color: green;
+   
+  
+}
